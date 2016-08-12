@@ -153,6 +153,8 @@ img {
 .wrapper-masthead {
   margin-bottom: 50px;
   box-shadow: 0 1 3px rgba(229,229,229,0.7);
+  -webkit-box-shadow: 0 1 3px rgba(229,229,229,0.7);
+  -moz-box-shadow: 0 1 3px rgba(229,229,229,0.7);
 }
 
 .masthead {
