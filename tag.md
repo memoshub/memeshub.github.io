@@ -1,5 +1,6 @@
 ---
 layout: default
+permalink: /tag/
 ---
 
 
@@ -43,7 +44,7 @@ layout: default
     
     <div class="tags">
     	{% for tag in post.categories %}
-    		<a href="/tag.md/?tag={{ tag }}">#{{ tag }}</a>
+    		<a href="/tag/?tag={{ tag }}">#{{ tag }}</a>
     	{% endfor %}
     </div>
      
