@@ -19,6 +19,9 @@ layout: default
     		<div class="author-name">
     				<h1>{{ post.author }}</h1>
     		</div>
+    		<div class="datetime">
+    			<p>{{ post.date | date: "%d %b %H:%M" }}</p>
+    		</div>
     	</a>
     </div>
 
