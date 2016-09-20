@@ -1,6 +1,6 @@
 ---
 layout: post
-title: You're up and running!
+title: mem by {{ post.author }}
 date: 2016-09-20 14:43:36 +0300
 author: svetashov
 image: 2016-09-20-16-40.jpg
