@@ -29,13 +29,13 @@ layout: default
     	{{ post.comment }}
     </div>
     {% endif %}
-    <a href="{{ post.url | prepend: site.baseurl }}">
+    
     <div class="mem">
     	<a rel="simplebox" href="/memes/{{ post.image }}">
 		<img src="/memes/{{ post.image }}"></a>
 
     </div>
-    </a>
+    
     <div class="tags">
     	{% for tag in post.categories %}
     		<a href="/tag.md/?tag={{ tag }}">#{{ tag }}</a>
