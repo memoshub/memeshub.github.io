@@ -31,7 +31,9 @@ layout: default
     {% endif %}
     <a href="{{ post.url | prepend: site.baseurl }}">
     <div class="mem">
-    	<a class="first" href="/memes/{{ post.image }}"><img src="/memes/{{ post.image }}"></a>
+    	<a rel="simplebox" href="/memes/{{ post.image }}">
+		<img src="/memes/{{ post.image }}"></a>
+
     </div>
     </a>
     <div class="tags">
