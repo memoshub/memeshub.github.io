@@ -13,6 +13,6 @@ categories: кек лол религия ору
 ![memes]({{ site.baseurl }}/memes/{{ page.image }})
 
 {% for tag in page.categories %}
-    		<a href="/tag.md/?tag={{ tag }}">#{{ tag }}</a>
+    		[{{ tag }}](https://memeshub.github.io/tag.md/?{{ tag }})
 {% endfor %}
 
