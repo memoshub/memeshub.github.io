@@ -24,11 +24,15 @@ layout: default
     			<p>{{ post.date | date: "%d %b %H:%M" }}</p>
     		</div>
     </div>
+    <div class="author-comment">
+    	{{ post.comment }}
+    </div>
     <a href="{{ post.url | prepend: site.baseurl }}">
     <div class="mem">
     	<img src="/memes/{{ post.image }}">
     </div>
     </a>
+     
 
     
 
