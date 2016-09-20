@@ -13,6 +13,18 @@
     <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
     <link rel="icon" type="image/vnd.microsoft.icon" href="/images/favicon.png" />
     <link rel="shortcut icon" type="images/x-icon" href="/images/favicon.png" />
+    <link rel="stylesheet" type="text/css" href="/fancybox/jquery.fancybox.css">
+    <script type="text/javascript" src="/fancybox/jquery-1.3.2.min.js"></script>
+    <script type="text/javascript" src="/fancybox/jquery.easing.1.3.js"></script>
+    <script type="text/javascript" src="/fancybox/jquery.fancybox-1.2.1.pack.js"></script>
+    <script type="text/javascript">
+$(document).ready(function() { 
+$("a.first").fancybox(); 
+$("a.two").fancybox(); 
+$("a.video").fancybox({"frameWidth":520,"frameHeight":400}); 
+$("a.content").fancybox({"frameWidth":600,"frameHeight":300}); 
+});
+    </script>
   </head>
 
   <body>
