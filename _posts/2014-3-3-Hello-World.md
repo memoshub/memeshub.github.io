@@ -5,7 +5,7 @@ date: 2016-09-20 14:43:36 +0300
 author: svetashov
 image: 2016-09-20-16-40.jpg
 comment: ору с таких мемесов
-categories: кек лол религия ору //аа
+categories: кек лол религия ору
 ---
 
 Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
