@@ -12,7 +12,7 @@ categories: кек лол религия ору
 
 ![memes]({{ site.baseurl }}/memes/{{ page.image }})
 
-{% for tag in post.categories %}
+{% for tag in page.categories %}
     		<a href="/tag.md/?tag={{ tag }}">#{{ tag }}</a>
 {% endfor %}
 
