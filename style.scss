@@ -261,6 +261,15 @@ nav {
   border-bottom: 1px solid rgb(226,226,226);
   background-color: $lightGray;
 }
+.author-line {
+  height: 30px;
+}
+.author-img {
+  height: 30px;
+  width: 30px;
+  border-radius: 15px;
+  float: left;
+}
 
 footer {
   padding: 14px 0;
