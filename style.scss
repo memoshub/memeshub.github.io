@@ -267,7 +267,7 @@ nav {
 
 }
 .author-name {
-  margin-left: 40px;
+  margin-left: 20px;
   display: block;
   float: left;
   height: 30px;
@@ -283,6 +283,10 @@ nav {
   border-radius: 15px;
   display: block;
   float: left;
+}
+.datetime {
+  float: right;
+  line-height: 1.7;
 }
 
 footer {
