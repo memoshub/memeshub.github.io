@@ -32,6 +32,11 @@ layout: default
     	<img src="/memes/{{ post.image }}">
     </div>
     </a>
+    <div class="tags">
+    	{% for tag in post.categories %}
+    		<a href="/tags/{{ tag }}.md">#{{ tag }}</a>
+    	{% endfor %}
+    </div>
      
 
     
