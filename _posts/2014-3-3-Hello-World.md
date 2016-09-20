@@ -2,6 +2,7 @@
 layout: post
 title: You're up and running!
 date: 2016-09-20 14:43:36 +0300
+author:
 ---
 
 Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
