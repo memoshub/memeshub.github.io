@@ -1,6 +1,6 @@
 ---
 layout: post
-title: mem by {{ post.author }}
+title: memes
 date: 2016-09-20 14:43:36 +0300
 author: svetashov
 image: 2016-09-20-16-40.jpg
