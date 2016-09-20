@@ -5,7 +5,7 @@ date: 2016-09-20 14:43:36 +0300
 author: svetashov
 image: 2016-09-20-16-40.jpg
 comment: ору с таких мемесов
-categories: кек лол религия ору lol
+categories: религия инвалиды смерть
 ---
 
 {{ page.comment }}
