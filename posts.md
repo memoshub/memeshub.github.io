@@ -1,5 +1,7 @@
 ---
 layout: default
+title: Авторы
+permalink: /authors/
 ---
 
 <div class="posts">
