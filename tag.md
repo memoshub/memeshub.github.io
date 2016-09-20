@@ -8,7 +8,7 @@ layout: default
 	{% assign pagetag = page.url | remove: 'https://memeshub.github.io/tag.md/?tag='  %}
   {% for post in site.posts %}
   {% for tags in post.categories %}
-  {% if tags ==  %}
+
 
 
 
