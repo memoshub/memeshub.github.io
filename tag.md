@@ -32,7 +32,7 @@ permalink: /tag/
     </div>
     {% if post.comment %}
     <div class="author-comment">
-    	{{ post.comment }}{{ pagetag }}
+    	{{ post.comment }}{{ pagetag }}{{ page.url }}
     </div> 
     {% endif %}
     
