@@ -15,11 +15,10 @@ list: инвалиды смерть
 	{% endif %}
 
 {% endfor %}
-{% if founded != 1 %}
+{% if founded == 0 %}
 	{% assign my_array = my_array | append: ", " %}
 	{% assign my_array = my_array | append: category %}
 	{% endif %}
 {% endfor %}
 {% endfor %}
 {{ my_array }}
-hh
