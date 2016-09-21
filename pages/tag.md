@@ -4,8 +4,6 @@ layout: default
 
 
 <div class="posts">
-	{% assign pageurl = page.url %}
-	{% assign pagetag = page.url | remove_first: 'https://memeshub.github.io/tag/?tag='  %}
   {% for post in site.posts %}
   {% for tags in post.categories %}
 
