@@ -9,8 +9,8 @@ list: инвалиды смерть
 {% for category in post.categories %}
 {% assign founded = 0 %}
 {% for i in my_array %}
-{% if category == i %}
-{% assign founded = 1 %}
+{% if i == category %}
+{% assign founded = "1" %}
 {{ founded }}
 {% endif %}
 {% endfor %}
@@ -20,4 +20,4 @@ list: инвалиды смерть
 {% endif %}
 {% endfor %}
 {% endfor %}
-{{ my_array }}
+{{ my_array}}
