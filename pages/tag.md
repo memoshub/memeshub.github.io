@@ -43,7 +43,7 @@ layout: default
     
     <div class="tags">
     	{% for tag in post.categories %}
-    		<a href="/tags/{{ tag }}.md">#{{ tag }}</a>
+    		<a href="/{{ tag }}">#{{ tag }}</a>
     	{% endfor %}
     </div>
      
