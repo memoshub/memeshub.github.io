@@ -13,8 +13,8 @@ categories: религия инвалиды смерть kek lol
 ![memes]({{ site.baseurl }}/memes/{{ page.image }})
 
 {% for tag in page.categories %}
-			<div class="post-tags">
-    		[{{ tag }}](https://memeshub.github.io/tag.md/?{{ tag }})
-    		</div>
+<a href="https://memeshub.github.io/tag.md/?{{ tag }}">
+	#{{ tag }}
+</a>
 {% endfor %}
 
