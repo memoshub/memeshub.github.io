@@ -325,8 +325,9 @@ footer {
   text-align: center;
   font-size: 2em;
   border-bottom: 1px solid #e2e2e2;
+  padding-bottom: 8px;
   @include mobile {
-    font-size: 1em;
+    font-size: 1.3em;
   }
 }
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
