@@ -6,6 +6,8 @@ permalink: /svetashov/
 
 
 <div class="posts">
+{% assign pageurl = page.url %}
+{% assign pagetag = page.url | remove_first: 'https://memeshub.github.io/tag/?tag='  %}
 {% for post in posts %}
 {% if post.author == page.name %}
  <article class="post">
