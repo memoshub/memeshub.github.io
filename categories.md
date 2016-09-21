@@ -9,16 +9,14 @@ list: инвалиды смерть
 {% for category in post.categories %}
 {% assign founded = 0 %}
 {% for i in my_array %}
-
 	{% if category == i %}
-	{% assign founded = 1 %}
+		{% assign founded = 1 %}
 	{% endif %}
-
 {% endfor %}
 {% if founded == 0 %}
 	{% assign my_array = my_array | append: ", " %}
 	{% assign my_array = my_array | append: category %}
-	{% endif %}
+{% endif %}
 {% endfor %}
 {% endfor %}
 {{ my_array }}
