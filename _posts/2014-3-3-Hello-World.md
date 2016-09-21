@@ -17,4 +17,4 @@ categories: религия инвалиды смерть kek lol
 	#{{ tag }}
 </a>
 {% endfor %}
- <a href='http://vkontakte.ru/share.php?url=https://memeshub.github.io{{ page.url | uri: absolute }}' target='_blank'><img src='/images/vk.png' border='0' width='180' height='30' alt='' title='Поделиться ВКонтакте'></a>
+ <a href='http://vkontakte.ru/share.php?url=https://memeshub.github.io{{ page.url | uri: absolute }}' target='_blank'><img src='/images/vk.png' border='0' width='120' height='30' alt='' title='Поделиться ВКонтакте'></a>
