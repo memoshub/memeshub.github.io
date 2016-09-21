@@ -14,7 +14,6 @@ permalink: /authors/
 {% assign my_array = my_array | split: ", " %}
 {% assign my_array = my_array | uniq %} 
 {% assign my_array = my_array | sort %}
-{{ my_array | join: ", " }}
 
 
 {% for author in my_array %}
