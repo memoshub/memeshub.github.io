@@ -2,21 +2,22 @@
 layout: default
 title: Категории
 permalink: /categories/
+list: инвалиды смерть
 ---
-{% assign list_categories = инвалиды %}
+
 {% for post in site.posts %}
 {% for category in post.categories %}
-{% for i in list_categories %}
+{% for i in page.list %}
  {% assign founded = 0 %}
 	{% if category == i%}
 	{% assign founded = 1 %}
 	{% endif %}
 	{% if founded != 1 %}
-	{% assign list_categories = list_categories | append: category %}
-	{% assign list_categories = list_categories | append: " " %}
+	{% assign page.list = page.list | append: category %}
+	{% assign page.list = page.list | append: " " %}
 	{% endif %}
 
 {% endfor %}
 {% endfor %}
 {% endfor %}
-{{list_categories}}
+{{ page.list }}
