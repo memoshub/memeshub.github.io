@@ -1,10 +1,10 @@
----
+п»ї---
 layout: default
-title: Категории
+title: РљР°С‚РµРіРѕСЂРёРё
 permalink: /categories/
-list: инвалиды смерть kek lol
+list: РёРЅРІР°Р»РёРґС‹ СЃРјРµСЂС‚СЊ kek lol
 ---
-{% assign my_array = "инвалиды, смерть" %}
+{% assign my_array = "РёРЅРІР°Р»РёРґС‹, СЃРјРµСЂС‚СЊ" %}
 {% for post in site.posts %}
 {% for category in post.categories %}
 {% assign my_array = my_array | append: ", " %}
@@ -13,4 +13,4 @@ list: инвалиды смерть kek lol
 {% endfor %}
 {{ my_array | uniq }}hh
 
-<p>вавап</p>
+<p>РІР°РІР°Рї</p>
