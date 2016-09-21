@@ -12,3 +12,5 @@ list: инвалиды смерть kek lol
 {% endfor %}
 {% endfor %}
 {{ my_array | uniq }}hh
+
+<p>вавап</p>
