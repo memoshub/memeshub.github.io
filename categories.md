@@ -8,8 +8,7 @@ list: инвалиды смерть
 {% for post in site.posts %}
 {% for category in post.categories %}
 {% assign my_array = my_array | append: ", " %}
-{% assign my_array = my_array | append: category %}
+{% assign my_array = my_array | append: category | split ", " %}
 {% endfor %}
 {% endfor %}
-{% assign my_array = my_array | split ", " %}
 {{ my_array | uniq }}
