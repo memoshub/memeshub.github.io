@@ -4,17 +4,14 @@ title: Авторы
 permalink: /authors/
 ---
 
-<div class="posts">
-  {% for post in site.posts %}
-    <article class="post">
-
-      <h1><a href="{{ site.baseurl }}{{ post.url }}">{{ post.title }}</a></h1>
-
-      <div class="entry">
-        {{ post.excerpt }}
-      </div>
-
-      <a href="{{ site.baseurl }}{{ post.url }}" class="read-more">Read More</a>
-    </article>
-  {% endfor %}
-</div>
+{% assign my_array = "" %}
+{% for post in site.posts %}
+{% for a in post.author %}
+{% assign my_array = my_array | append: ", " %}
+{% assign my_array = my_array | append: a %}
+{% endfor %}
+{% endfor %}
+{% assign my_array = my_array | split: ", " %}
+{% assign my_array = my_array | uniq %} 
+{% assign my_array = my_array | sort %}
+{{ my_array | join: ", " }}
