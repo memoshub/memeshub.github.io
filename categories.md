@@ -5,6 +5,6 @@ permalink: /categories/
 list: инвалиды смерть kek lol
 ---
 {% assign my_array = "инвалиды, смерть" %}
-{{ my_array | uniq | join ", " }} hh
+{{ my_array }} hh
 
 <p>вавап</p>
