@@ -11,10 +11,9 @@ list: инвалиды смерть
 {% for i in my_array %}
 {% if i == category %}
 {% assign founded = 1 %}
-{{ founded }}
 {% endif %}
 {% endfor %}
-{% if founded == 1 %}
+{% if founded == 0 %}
 {% assign my_array = my_array | append: ", " %}
 {% assign my_array = my_array | append: category %}
 {% endif %}
