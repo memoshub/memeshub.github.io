@@ -12,4 +12,4 @@ list: инвалиды смерть
 {% endfor %}
 {% endfor %}
 {% assign my_array = my_array | split ", " %}
-{{ my_array | uniq}}
+{{ my_array | uniq }}
