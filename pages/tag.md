@@ -35,7 +35,7 @@ layout: default
     
     <div class="mem">
     	<a rel="simplebox" href="{{ post.url }}">
-		<img src="/memes/{{ post.image }}"></a>
+		<img src="/memes/{{ post.image }}">ggg</a>
 
     </div>
     
