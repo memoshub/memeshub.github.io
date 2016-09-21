@@ -4,7 +4,7 @@ title: Категории
 permalink: /categories/
 list: инвалиды смерть
 ---
-{% assign my_array = "инвалиды, смерть" | split: ", " %}
+{% assign my_array = "инвалиды, смерть" %}
 {% for post in site.posts %}
 {% for category in post.categories %}
 {% for i in my_array %}
