@@ -7,8 +7,9 @@ list: инвалиды смерть
 {% assign my_array = "инвалиды, смерть" %}
 {% for post in site.posts %}
 {% for category in post.categories %}
+{% assign founded = 0 %}
 {% for i in my_array %}
- {% assign founded = 0 %}
+
 	{% if category == i%}
 	{% assign founded = 1 %}
 	{% endif %}
