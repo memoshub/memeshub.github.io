@@ -324,6 +324,7 @@ footer {
 .name-page-category {
   text-align: center;
   font-size: 2em;
+  border-bottom: 1px solid #e2e2e2;
   @include mobile {
     font-size: 1em;
   }
