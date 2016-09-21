@@ -30,7 +30,7 @@ permalink: /svetashov/
     {% endif %}
     
     <div class="mem">
-    	<a rel="simplebox" href="/{{ post.url }}">
+    	<a rel="simplebox" href="{{ post.url }}">
 		<img src="/memes/{{ post.image }}"></a>
 
     </div>
