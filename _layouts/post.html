@@ -10,7 +10,7 @@ layout: default
   </div>
 
   <div class="date">
-   {{ page.date | date: "%H:%M, %e %B, %Y" }}
+   {% include full_date.html date=page.date %}
   </div>
 
   {% include disqus.html %}
