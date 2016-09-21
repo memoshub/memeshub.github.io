@@ -330,6 +330,20 @@ footer {
     font-size: 1.3em;
   }
 }
+.author {
+  display: block;
+  height: 100px;
+  padding: 10px;
+  border: 1px solid #e2e2e2;
+  border-radius: 10px;
+}
+.author-photo {
+  img {
+    border-radius: 50%;
+    height: 70px;
+    width: 70px
+  }
+}
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
