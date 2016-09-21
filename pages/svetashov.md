@@ -20,7 +20,7 @@ permalink: /svetashov/
     		</div>
     		</a>
     		<div class="datetime">
-    			<p>{{ post.date | date: "%d %b %H:%M" }}</p>
+    			<p>{% include short_date.html date=post.date %}</p>
     		</div>
     </div>
     {% if post.comment %}
