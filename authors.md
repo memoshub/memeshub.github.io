@@ -20,6 +20,7 @@ permalink: /authors/
 <div class="author">
 <a href="/{{ author }}">
 	<div class="author-photo"><img src="/images/author-{{ author }}.png"></div> 
+	<h1>{{ author }}</h1>
 </a>
 </div>
 {% endfor %}
