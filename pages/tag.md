@@ -31,7 +31,7 @@ layout: default
     </div>
     {% if post.comment %}
     <div class="author-comment">
-    	{{ post.comment }}{{ pagetag }}{{ page.url }}
+    	{{ post.comment }}
     </div> 
     {% endif %}
     
