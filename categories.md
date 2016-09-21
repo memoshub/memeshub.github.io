@@ -2,7 +2,7 @@
 layout: default
 title: Категории
 permalink: /categories/
-list: инвалиды смерть
+list: инвалиды смерть kek lol
 ---
 {% assign my_array = "инвалиды, смерть" %}
 {% for post in site.posts %}
