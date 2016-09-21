@@ -11,4 +11,5 @@ list: инвалиды смерть
 {% assign my_array = my_array | append: category %}
 {% endfor %}
 {% endfor %}
+{% assign my_array = my_array | split ", " %}
 {{ my_array | uniq | join: ", " }}
