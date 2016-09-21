@@ -19,6 +19,6 @@ permalink: /authors/
 
 {% for author in my_array %}
 <div class="author">
-	<div class="author-photo"><img src="/images/{{ author }}.png"></div> 
+	<div class="author-photo"><img src="/images/author-{{ author }}.png"></div> 
 </div>
 {% endfor %}
