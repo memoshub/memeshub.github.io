@@ -21,3 +21,4 @@ list: инвалиды смерть
 {% endfor %}
 {% endfor %}
 {{ page.list }}
+hh
