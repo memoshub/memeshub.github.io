@@ -39,7 +39,6 @@ permalink: /svetashov/
     	{% for tag in post.categories %}
     		<a href="/tags/{{ tag }}.md">#{{ tag }}</a>
     	{% endfor %}
-    </div>
 {% endif %}
 {% endfor %}
 </div>
