@@ -36,7 +36,7 @@ layout: default
     {% endif %}
     
     <div class="mem">
-    	<a rel="simplebox" href="/memes/{{ post.image }}">
+    	<a rel="simplebox" href="/{{ post.url }}">
 		<img src="/memes/{{ post.image }}"></a>
 
     </div>
