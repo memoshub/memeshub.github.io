@@ -4,7 +4,7 @@ title: Авторы
 permalink: /authors/
 ---
 
-{% assign my_array = "" %}
+{% assign my_array = "svetashov" %}
 {% for post in site.posts %}
 {% for a in post.author %}
 {% assign my_array = my_array | append: ", " %}
