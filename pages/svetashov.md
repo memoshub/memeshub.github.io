@@ -7,7 +7,7 @@ permalink: /svetashov/
 
 <div class="posts">
 {% for post in site.posts %}
-{% if post.author == page.name %}
+{% if post.author == "svetashov" %}
  <article class="post">
 
 
