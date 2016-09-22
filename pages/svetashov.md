@@ -36,3 +36,5 @@ vk: artyomsvetashov
     {% endif %}
     {% endfor %}
 </div>
+</article>
+</div>

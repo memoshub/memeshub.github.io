@@ -36,3 +36,5 @@ vk: id166666047
     {% endif %}
     {% endfor %}
 </div>
+</article>
+</div>
