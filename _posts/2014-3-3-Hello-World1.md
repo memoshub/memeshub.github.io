@@ -8,7 +8,8 @@ comment: ору с таких мемесов
 categories: ору инвалиды 
 ---
 {{ page.comment }}
-![memes]({{ site.baseurl }}/memes/{{ page.image }})
+	  
+![memes]({{ page.image }})
 {% for tag in page.categories %}
 <a href="https://memeshub.github.io/{{ tag }}">
 #{{ tag }}
