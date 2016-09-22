@@ -1,9 +1,9 @@
 ---
 layout: author
-aname: svetashov
-permalink: /svetashov/
-stat: Основатель сайта MemesHub, величайший мемолог и критик мемесов
-vk: artyomsvetashov
+aname: butoff
+permalink: /butoff/
+stat: Заслуженный мемолог России и автор мемесов
+vk: id166666047
 ---
 <div class="posts">
 {% for post in site.posts %}
