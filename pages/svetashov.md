@@ -34,7 +34,7 @@ vk: artyomsvetashov
     <a href="/{{ tag }}">#{{ tag }}</a>
     {% endfor %}
 </div>
-    <a href='http://vkontakte.ru/share.php?url=https://memeshub.github.io{{ post.url | uri: absolute }}' target='_blank'><img src='/images/vk.png' border='0' width='120' height='30' alt='' title='Поделиться ВКонтакте'></a>
+    <a href='http://vkontakte.ru/share.php?url=https://memeshub.github.io{{ post.url | uri: absolute }}' target='_blank'><img src='/images/vk.png' border='0' width='76' height='26' alt='' title='Поделиться ВКонтакте'></a>
     <a href="https://twitter.com/share" class="twitter-share-button" data-size="large" data-hashtags="memesHub">Tweet</a> <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 </article>
 {% endif %}
