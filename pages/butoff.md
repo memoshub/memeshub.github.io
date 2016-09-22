@@ -2,7 +2,7 @@
 layout: author
 aname: butoff
 permalink: /butoff/
-stat: Заслуженный мемолог России и автор мемесов
+stat: Я могу назвать себя мемологом потому что: &brЯ шарю в мемасах &brОру над ними &brИ потому что ты петух
 vk: id166666047
 ---
 <div class="posts">
