@@ -365,6 +365,7 @@ footer {
 }
 .author-description{
   margin-bottom: 10px;
+  text-align: center;
   h1{
     text-align: center;
     text-transform: uppercase;
@@ -376,7 +377,7 @@ footer {
   img{
     max-width: 320px;
     border-radius: 50%;
-    include mobile{
+    @include mobile{
       max-width: 160px;
     }
   }
