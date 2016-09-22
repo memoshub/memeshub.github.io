@@ -365,6 +365,14 @@ footer {
 }
 .author-description{
   margin-bottom: 10px;
+  h1{
+    text-align: center;
+    text-transform: uppercase;
+    font-size: 22pt;
+    @include mobile {
+      font-size: 16pt;
+    }
+  }
 }
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
