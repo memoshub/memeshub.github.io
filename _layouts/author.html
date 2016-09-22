@@ -30,9 +30,18 @@
     </div>
     <div class="author-description">
       <h1>{{ page.stat }}</h1>
-        <img src="/images/author-{{ page.aname }}.png">
-        <h1>{{ page.aname }}</h1>
+      <img src="/images/author-{{ page.aname }}.png">
+      <h1>{{ page.aname }}</h1>
+
+{% assign author_posts = 0 %}
+{% for post in site.posts %}
+{% if post.author == page.aname %}
+{% assign author_posts = author_posts | plus: 1 %}
+{% endif %}
+{% endfor %}
+      <h1>Посты от автора <font color="#4183C4">{{ page.aname }}</font>:</h1>
     </div>
+
     <div id="main" role="main" class="container">
       {{ content }}
     </div>
