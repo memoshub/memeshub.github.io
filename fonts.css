@@ -1,0 +1,53 @@
+@font-face {
+	font-family:'Myriad Set Pro Ultralight';
+	font-style:normal;
+	font-weight:100;
+	src:local('☺'), url("/fonts/myriad-set-pro_ultralight.ttf") format("truetype");
+	/* Copyright (c) 1992 Adobe Systems Incorporated. All Rights Reserved. Myriad is a trademark of Adobe Systems Incorporated. */
+}
+
+
+
+@font-face {
+	font-family:'Myriad Set Pro Thin';
+	font-style:normal;
+	font-weight:200;
+	src:local('☺'), url("/fonts/myriad-set-pro_thin.ttf") format("truetype");
+	/* Copyright (c) 1992 Adobe Systems Incorporated. All Rights Reserved. Myriad is a trademark of Adobe Systems Incorporated. */
+}
+
+
+@font-face {
+	font-family:'Myriad Set Pro Medium';
+	font-style:normal;
+	font-weight:500;
+	src:local('☺'), url("/fonts/myriad-set-pro_medium.ttf") format("truetype");
+	/* Copyright (c) 1992 Adobe Systems Incorporated. All Rights Reserved. Myriad is a trademark of Adobe Systems Incorporated. */
+}
+
+@font-face {
+	font-family:'Myriad Set Pro Semibold';
+	font-style:normal;
+	font-weight:600;
+	src:local('☺'), url("/fonts/myriad-set-pro_semibold.ttf") format("truetype");
+	/* Copyright (c) 1992 Adobe Systems Incorporated. All Rights Reserved. Myriad is a trademark of Adobe Systems Incorporated. */
+}
+
+
+@font-face {
+	font-family:'Myriad Set Pro Bold';
+	font-style:normal;
+	font-weight:700;
+	src:local('☺'), url("/fonts/myriad-set-pro_bold.ttf") format("truetype");
+	/* Copyright (c) 1992 Adobe Systems Incorporated. All Rights Reserved. Myriad is a trademark of Adobe Systems Incorporated. */
+}
+
+
+
+@font-face {
+	font-family:'Myriad Set Pro Text';
+	font-style:normal;
+	font-weight:400;
+	src:local('☺'), url("/fonts/myriad-set-pro_text.ttf") format("truetype");
+	/* Copyright (c) 1992 Adobe Systems Incorporated. All Rights Reserved. Myriad is a trademark of Adobe Systems Incorporated. */
+}
