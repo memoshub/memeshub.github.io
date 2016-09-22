@@ -1,8 +1,9 @@
 ---
-layout: default
+layout: author
 name: svetashov
 permalink: /svetashov/
 ---
+
 
 
 <div class="posts">
