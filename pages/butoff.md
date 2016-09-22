@@ -27,7 +27,7 @@ vk: id166666047
 {% endif %}
 <div class="mem">
     <a rel="simplebox" href="{{ post.url }}">
-    <img src="/memes/{{ post.image }}"></a>
+    <img src="{{ post.image }}"></a>
 </div>
 <div class="tags">
     {% for tag in post.categories %}
