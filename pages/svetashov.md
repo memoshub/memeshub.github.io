@@ -2,6 +2,7 @@
 layout: author
 name: svetashov
 permalink: /svetashov/
+stat: Основатель сайта MemesHub, величайший мемолог и критик мемесов
 ---
 
 
