@@ -3,12 +3,15 @@ layout: post
 title: Mem
 date: 2016-09-21 15:11:36 +0300
 author: butoff
-image: 2016-09-20-16-40.jpg
+image: 2016-09-22-16-58.jpg
 comment: ору с таких мемесов
 categories: ору инвалиды смерть
 ---
-Next you can update your site name, avatar and other options using the _config.yml file in the root of your repository (shown below).
-
-![_config.yml]({{ site.baseurl }}/images/config.png)
-
-The easiest way to make your first post is to edit this one. Go into /_posts/ and update the Hello World markdown file. For more instructions head over to the [Jekyll Now repository](https://github.com/barryclark/jekyll-now) on GitHub.
+{{ page.comment }}
+![memes]({{ site.baseurl }}/memes/{{ page.image }})
+{% for tag in page.categories %}
+<a href="https://memeshub.github.io/{{ tag }}">
+#{{ tag }}
+</a>
+{% endfor %}
+<a href='http://vkontakte.ru/share.php?url=https://memeshub.github.io{{ page.url | uri: absolute }}' target='_blank'><img src='/images/vk.png' border='0' width='120' height='30' alt='' title='Поделиться ВКонтакте'></a>
