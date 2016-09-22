@@ -1,76 +1,67 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.name }}</title>
-
-    {% include meta.html %}
-
-    <!--[if lt IE 9]>
-      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
-    <![endif]-->
-
-    <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
-    <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
-    <link rel="icon" type="image/vnd.microsoft.icon" href="/images/favicon.png" />
-    <link rel="shortcut icon" type="images/x-icon" href="/images/favicon.png" />
-  </head>
-
-  <body>
-    <div class="wrapper-masthead">
-      <div class="container">
-        <header class="masthead clearfix">
-          <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
-
-          <nav>
-            <a href="{{ site.baseurl }}/categories">Категории</a>
-            <a href="{{ site.baseurl }}/authors">Авторы</a>
-          </nav>
-        </header>
-      </div>
-    </div>
-    <div class="author-description">
-      <h1>{{ page.stat }}</h1>
-      <img src="/images/author-{{ page.aname }}.png">
-      <h1>{{ page.aname }}</h1>
-      <a href="https://vk.com/{{ page.vk }}" target="_blank"><img class="svg-icon" src="/images/vk.svg"></a>
-
-{% assign author_posts = 0 %}
-{% for post in site.posts %}
-{% if post.author == page.aname %}
-{% assign author_posts = author_posts | plus: 1 %}
-{% endif %}
-{% endfor %}
-{% if author_posts >= 1000 %}
-{% assign cp = author_posts | modulo: 1000 %}
-{% elsif author_posts >= 100 %}
-{% assign cp = author_posts | modulo: 100 %}
-{% elsif author_posts >= 10 %}
-{% assign cp = author_posts | modulo: 100 %}
-{% else %}
-{% assign cp = author_posts %}
-{% endif %}
-{% assign word = "Постов" %}
-{% if cp == 1 %}
-{% assign word = "Пост" %}
-{% elsif cp > 1 and cp < 5 %}
-{% assign word = "Постa" %}
-{% endif %}
-      <h1>{{ author_posts }} {{ word }} от автора <font color="#4183C4">{{ page.aname }}</font>:</h1>
-    </div>
-
-    <div id="main" role="main" class="container">
-      {{ content }}
-    </div>
-
-    <div class="wrapper-footer">
-      <div class="container">
-        <footer class="footer">
-          {% include svg-icons.html %}
-          <p style="font-size: 0.8em; margin: 8px;">2016</p>
-        </footer>
-      </div>
-    </div>
-
-    {% include analytics.html %}
-  </body>
+    <head>
+        <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.name }}</title>
+        {% include meta.html %}
+        <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+        <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+        <link rel="icon" type="image/vnd.microsoft.icon" href="/images/favicon.png" />
+        <link rel="shortcut icon" type="images/x-icon" href="/images/favicon.png" />
+    </head>
+    <body>
+        <div class="wrapper-masthead">
+            <div class="container">
+                <header class="masthead clearfix">
+                    <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+                    <nav>
+                        <a href="{{ site.baseurl }}/categories">Категории</a>
+                        <a href="{{ site.baseurl }}/authors">Авторы</a>
+                    </nav>
+                </header>
+            </div>
+        </div>
+        <div class="author-description">
+            <h1>{{ page.stat }}</h1>
+            <img src="/images/author-{{ page.aname }}.png">
+            <h1>{{ page.aname }}</h1>
+            <a href="https://vk.com/{{ page.vk }}" target="_blank"><img class="svg-icon" src="/images/vk.svg"></a>
+            {% assign author_posts = 0 %}
+            {% for post in site.posts %}
+            {% if post.author == page.aname %}
+            {% assign author_posts = author_posts | plus: 1 %}
+            {% endif %}
+            {% endfor %}
+            {% if author_posts >= 1000 %}
+            {% assign cp = author_posts | modulo: 1000 %}
+            {% elsif author_posts >= 100 %}
+            {% assign cp = author_posts | modulo: 100 %}
+            {% elsif author_posts >= 10 %}
+            {% assign cp = author_posts | modulo: 100 %}
+            {% else %}
+            {% assign cp = author_posts %}
+            {% endif %}
+            {% assign word = "Постов" %}
+            {% if cp == 1 %}
+            {% assign word = "Пост" %}
+            {% elsif cp > 1 and cp < 5 %}
+            {% assign word = "Постa" %}
+            {% endif %}
+            <h1>{{ author_posts }} {{ word }} от автора <font color="#4183C4">{{ page.aname }}</font>:</h1>
+        </div>
+        <div id="main" role="main" class="container">
+            {{ content }}
+        </div>
+        <div class="wrapper-footer">
+            <div class="container">
+                <footer class="footer">
+                    {% include svg-icons.html %}
+                    <p style="font-size: 0.8em; margin: 8px;">2016</p>
+                </footer>
+            </div>
+        </div>
+        {% include analytics.html %}
+    </body>
 </html>
