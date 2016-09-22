@@ -8,6 +8,7 @@ comment: ору с таких мемесов
 categories: kek lol
 ---
 {{ page.comment }}
+	  
 ![memes]({{ page.image }})
 {% for tag in page.categories %}
 <a href="https://memeshub.github.io/{{ tag }}">
