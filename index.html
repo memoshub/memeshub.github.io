@@ -1,54 +1,35 @@
 ---
 layout: default
 ---
-
 <div class="posts">
-  {% for post in site.posts %}
-
-
-
-
-
+    {% for post in site.posts %}
     <article class="post">
-
-
-
-    <div class="author-line">
-    	<a href="/{{ post.author }}">
-    	<img src="/images/author-{{ post.author }}.png" class="author-img"> 
-    		<div class="author-name">
-    				<h1>{{ post.author }}</h1>
-    		</div>
-    		</a>
-    		<div class="datetime">
-    			<p>{% include short_date.html date=post.date %}</p>
-    		</div>
-    </div>
-    {% if post.comment %}
-    <div class="author-comment">
-    	{{ post.comment }}
-    </div>
-    {% endif %}
-    
-    <div class="mem">
-    	<a rel="simplebox" href="{{ post.url }}">
-		<img src="/memes/{{ post.image }}"></a>
-
-    </div>
-    
-    <div class="tags">
-    	{% for tag in post.categories %}
-    		<a href="/{{ tag }}">#{{ tag }}</a>
-    	{% endfor %}
-    </div>
-    <a href='http://vkontakte.ru/share.php?url=https://memeshub.github.io{{ post.url | uri: absolute }}' target='_blank'><img src='/images/vk.png' border='0' width='120' height='30' alt='' title='Поделиться ВКонтакте'></a>
-     
-
-    
-
-     
-
-      
+        <div class="author-line">
+            <a href="/{{ post.author }}">
+                <img src="/images/author-{{ post.author }}.png" class="author-img"> 
+                <div class="author-name">
+                    <h1>{{ post.author }}</h1>
+                </div>
+            </a>
+            <div class="datetime">
+                <p>{% include short_date.html date=post.date %}</p>
+            </div>
+        </div>
+        {% if post.comment %}
+        <div class="author-comment">
+            {{ post.comment }}
+        </div>
+        {% endif %}
+        <div class="mem">
+            <a rel="simplebox" href="{{ post.url }}">
+            <img src="/memes/{{ post.image }}"></a>
+        </div>
+        <div class="tags">
+            {% for tag in post.categories %}
+            <a href="/{{ tag }}">#{{ tag }}</a>
+            {% endfor %}
+        </div>
+        <a href='http://vkontakte.ru/share.php?url=https://memeshub.github.io{{ post.url | uri: absolute }}' target='_blank'><img src='/images/vk.png' border='0' width='120' height='30' alt='' title='Поделиться ВКонтакте'></a>
     </article>
-  {% endfor %}
+    {% endfor %}
 </div>
