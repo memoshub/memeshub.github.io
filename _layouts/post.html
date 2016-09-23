@@ -4,9 +4,9 @@ layout: default
 <article class="post">
     <h1>{{ page.title }} by <a href="/{{ page.author }}" style="color: #4183c4;">{{ page.author }}</a></h1>
     <div class="entry">
-        {{ page.comment }}
+        <p>{{ page.comment }}</p>
 	  
-![memes]({{ page.image }})
+<img src="{{ page.image }}">
 {% for tag in page.categories %}
 <a href="https://memeshub.github.io/{{ tag }}">
 #{{ tag }}
