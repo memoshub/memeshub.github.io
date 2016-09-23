@@ -1,0 +1,1 @@
+c:\python35\python.exe e:\python\clock.py
