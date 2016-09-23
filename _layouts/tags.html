@@ -24,7 +24,8 @@
             </div>
         </div>
         <div id="main" role="main" class="container">
-            <h1 class="name-page-category">Посты с тегом <font color = "4183cf">#{{ page.tag }}</font></h1>
+            {% include padeg_page.html %}
+            <h1 class="name-page-category"> с тегом <font color = "4183cf">#{{ page.tag }}</font></h1>
             <div class="posts">
                 {% for post in site.posts %}
                 {% for tags in post.categories %}
