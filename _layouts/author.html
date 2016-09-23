@@ -28,27 +28,7 @@
             <img src="/images/author-{{ page.aname }}.png">
             <h1>{{ page.aname }}</h1>
             <a href="https://vk.com/{{ page.vk }}" target="_blank"><img class="svg-icon" src="/images/vk.svg"></a>
-            {% assign author_posts = 0 %}
-            {% for post in site.posts %}
-            {% if post.author == page.aname %}
-            {% assign author_posts = author_posts | plus: 1 %}
-            {% endif %}
-            {% endfor %}
-            {% if author_posts >= 1000 %}
-            {% assign cp = author_posts | modulo: 1000 %}
-            {% elsif author_posts >= 100 %}
-            {% assign cp = author_posts | modulo: 100 %}
-            {% elsif author_posts >= 10 %}
-            {% assign cp = author_posts | modulo: 100 %}
-            {% else %}
-            {% assign cp = author_posts %}
-            {% endif %}
-            {% assign word = "Постов" %}
-            {% if cp == 1 %}
-            {% assign word = "Пост" %}
-            {% elsif cp > 1 and cp < 5 %}
-            {% assign word = "Постa" %}
-            {% endif %}
+            {% include padeg_page.html %}
             <h1>{{ author_posts }} {{ word }} от автора <font color="#4183C4">{{ page.aname }}</font>:</h1>
         </div>
         <div id="main" role="main" class="container">
