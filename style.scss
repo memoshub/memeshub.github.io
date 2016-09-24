@@ -393,7 +393,7 @@ footer {
 .vk-share-button{
     background-color: #5a87b2;
     border-radius: 4px;
-    width: 104px;
+    width: 124px;
     font-size: 10pt;
     height: 28px;
     text-align: center;
@@ -407,12 +407,26 @@ footer {
       margin: 0;
     }
     i{
-      background-image: url("/images/vk1.png");
+    background-image: url("/images/vk1.png");
+    background: transparent 0 0 no-repeat;
+    position: relative;
+    display: inline-block;
+    top: 4px;
+    width: 18px;
+    height: 18px;
     }
     a{
     height: 28px;
     padding: 1px 10px 1px 9px;
     border-radius: 4px;
+    }
+    span{
+    margin-left: 4px;
+    color: white;
+    display: inline-block;
+    vertical-align: top;
+    zoom: 1;
+    white-space: nowrap;
     }
 }
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
