@@ -30,7 +30,6 @@ layout: default
             <a href="/{{ tag }}">#{{ tag }}</a>
             {% endfor %}
         </div>
-        <a href='http://vkontakte.ru/share.php?url=https://memeshub.github.io{{ post.url | uri: absolute }}&image={{post.image}}' target='_blank'><img src='/images/vk.png' border='0' width='76' height='28' alt='' title='Поделиться ВКонтакте' onclick="window.open('http://vkontakte.ru/share.php?url=https://memeshub.github.io{{ post.url | uri: absolute }}&image={{post.image}}', 'Поделиться ВКонтакте', 'toolbar=0, status=0, width=548, height=325'); return false"></a>
         <div class="vk-share-button">Поделиться</div>
         <a href="http://twitter.com/share?text=&url=https://memeshub.github.io{{post.url}}" title="Поделиться ссылкой в Твиттере" onclick="window.open(this.href, this.title, 'toolbar=0, status=0, width=548, height=325'); return false" target="_parent" class="twitter-share-button" data-size="large">Твитнуть</a><script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
 

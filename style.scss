@@ -391,8 +391,15 @@ footer {
   margin-top: 8px;
 }
 .vk-share-button{
-  background-color: #5a87b2;
-  border-radius: 4px;
+    background-color: #5a87b2;
+    border-radius: 4px;
+    width: 84px;
+    font-size: 10pt;
+    height: 28px;
+    text-align: center;
+    line-height: 2;
+    color: white;
+    float: left;
 }
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
