@@ -47,7 +47,7 @@ page_number: 1
 {%assign rb = count_posts | divided_by: 20.0 | ceil %}
 {% for i in (1..rb) %}
 {% if i == 1 %}
-<a href="{{site.baseurl}}">{{i}}</a>
+<a href="memeshub.ru">{{i}}</a>
 {% elsif i == page_number %}
 <a href="/page{{i}}" class="selected-page">{{i}}</a>
 {% else %}
