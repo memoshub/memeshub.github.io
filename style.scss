@@ -441,12 +441,23 @@ footer {
   }
 }
 .selected-page{
-  width: 16px;
-  height: 16px;
+  width: 23px;
+  height: 23px;
+  background-color: #5a8d3e;
+  border-radius: 50%;
+  color: white;
+  float: left;
+  margin-right: 10px;
+  text-align: center;
+  line-height: 1;
 }
 .page-number{
-  width: 16px;
-  height: 16px;
+  width: 23px;
+  height: 23px;
+  float: left;
+  margin-right: 10px;
+  text-align: center;
+  line-height: 1;
 }
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
