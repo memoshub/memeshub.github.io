@@ -1,0 +1,45 @@
+---
+layout: default
+page_number: 2
+---
+{% assign count_posts = 0 %}
+{% for post in site.posts %}
+{% assign count_posts = count_posts | plus: 1 %}
+{% endfor %}
+{% assign off_a = page.page_number | minus: 1 | times: 20 %}
+
+<div class="posts">
+{% for post in site.posts limit: 20  offset: off_a %}
+<article class="post">
+        <div class="author-line">
+            <a href="/{{ post.author }}">
+                <img src="/images/author-{{ post.author }}.png" class="author-img"> 
+                <div class="author-name">
+                    <h1>{{ post.author }}</h1>
+                </div>
+            </a>
+            <div class="datetime">
+                <p>{% include short_date.html date=post.date %}</p>
+            </div>
+        </div>
+        {% if post.comment %}
+        <div class="author-comment">
+            {{ post.comment }}
+        </div>
+        {% endif %}
+        <div class="mem">
+            <a rel="simplebox" href="{{ post.url }}">
+            <img src="{{ post.image }}"></a>
+        </div>
+        <div class="tags">
+            {% for tag in post.categories %}
+            <a href="/{{ tag }}">#{{ tag }}</a>
+            {% endfor %}
+        </div>
+        <div class="vk-share-button"><a href='http://vk.com/share.php?url=https://memoshub.github.io{{ post.url | uri: absolute }}&image={{post.image}}' target='_blank' onclick="window.open('http://vk.com/share.php?url=https://memoshub.github.io{{ post.url | uri: absolute }}&image={{post.image}}', this.title, 'toolbar=0, status=0, width=548, height=325'); return false"><img src="/images/vk1.png"><span>Поделиться</span></a></div>
+        <a href="http://twitter.com/share?text=&url=https://memoshub.github.io{{post.url}}" title="Поделиться ссылкой в Твиттере" onclick="window.open(this.href, this.title, 'toolbar=0, status=0, width=548, height=325'); return false" target="_parent" class="twitter-share-button" data-size="large">Твитнуть</a>
+
+    </article>
+{% endfor %}
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>	
+</div>
