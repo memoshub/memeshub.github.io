@@ -1,16 +1,12 @@
----
-layout: default
-page_number: 1
----
-<p style="text-align: center; font-size: 2em; margin-bottom: 30px;">{{ site.description }}</p>
+{% assign count_posts = 0 %}
+{% for post in site.posts %}
+{% assign count_posts = count_posts | plus: 1 %}
+{% endfor %}
+{% assign off_a = page.page_number | minus: 1 | times: 20 %}
+
 <div class="posts">
-    {% assign count_posts = 0 %}
-    {% for post in site.posts %}
-    {% assign count_posts = count_posts | plus: 1 %}
-    {% endfor %}
-    {% assign off_a = page.page_number | minus: 1 | times: 20 %}
-    {% for post in site.posts limit: 20  offset: off_a %}
-    <article class="post">
+{% for post in site.posts limit: 20  offset: off_a %}
+<article class="post">
         <div class="author-line">
             <a href="/{{ post.author }}">
                 <img src="/images/author-{{ post.author }}.png" class="author-img"> 
@@ -40,8 +36,6 @@ page_number: 1
         <a href="http://twitter.com/share?text=&url=https://memoshub.github.io{{post.url}}" title="Поделиться ссылкой в Твиттере" onclick="window.open(this.href, this.title, 'toolbar=0, status=0, width=548, height=325'); return false" target="_parent" class="twitter-share-button" data-size="large">Твитнуть</a>
 
     </article>
-    {% endfor %}
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+{% endfor %}
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>	
 </div>
-
-
