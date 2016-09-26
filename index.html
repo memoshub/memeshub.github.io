@@ -48,7 +48,7 @@ page_number: 1
 {% for i in (1..rb) %}
 {% if i == 1 %}
 <a href="{{site.baseurl}}">{{i}}</a>
-{% elif i == page_number %}
+{% elsif i == page_number %}
 <a href="/page{{i}}" class="selected-page">{{i}}</a>
 {% else %}
 <a href="/page{{i}}">{{i}}</a>
