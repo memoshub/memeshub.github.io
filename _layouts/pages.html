@@ -71,7 +71,7 @@
 {% for i in (1..rb) %}
 {% if i == 1 %}
 <div class="page-number"><a href="/">{{i}}</a></div>
-{% elsif i == page_number %}
+{% elsif i == page.page_number %}
 <div class="selected-page"><a href="/page{{i}}">{{i}}</a></div>
 {% else %}
 <div class="page-number"><a href="/page{{i}}">{{i}}</a></div>
