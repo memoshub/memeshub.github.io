@@ -1,6 +1,7 @@
 ---
 layout: default
 page_number: 2
+permalink: /page2/
 ---
 {% assign count_posts = 0 %}
 {% for post in site.posts %}
