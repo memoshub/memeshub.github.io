@@ -47,11 +47,11 @@ page_number: 1
 {%assign rb = count_posts | divided_by: 20.0 | ceil %}
 {% for i in (1..rb) %}
 {% if i == 1 %}
-<a href="/">{{i}}</a>
+<div class="page-number"><a href="/">{{i}}</a></div>
 {% elsif i == page_number %}
-<a href="/page{{i}}" class="selected-page">{{i}}</a>
+<div class="selected-page"><a href="/page{{i}}">{{i}}</a></div>
 {% else %}
-<a href="/page{{i}}">{{i}}</a>
+<div class="page-number"><a href="/page{{i}}">{{i}}</a></div>
 {% endif %}
 {% endfor %}
 
