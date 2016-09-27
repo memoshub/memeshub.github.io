@@ -476,6 +476,13 @@ footer {
   margin-left: auto; 
   margin-right: auto;
 }
+@media screen and (max-height: 700px){
+  .page404{
+  width: 850px; 
+  margin-left: auto; 
+  margin-right: auto;
+}
+}
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
