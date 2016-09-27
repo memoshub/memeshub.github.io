@@ -13,9 +13,14 @@
             {% else %}
             {% assign cp = author_posts %}
             {% endif %}
-            {% assign word = "Постов" %}
+            {% assign word = "постов" %}
             {% if cp == 1 %}
-            {% assign word = "Пост" %}
-            {% elsif cp > 1 and cp < 5 %}
-            {% assign word = "Постa" %}
+            {% assign word = "пост" %}
+            {% elsif cp < 5 %}
+            {% assign word = "постa" %}
+            {% else %}
+            {% assign word = "постов" %}
+            {% endif %}
+            {% if author_posts > 9 and author_posts < 21 %}
+            {% assign word = "постов" %}
             {% endif %}
