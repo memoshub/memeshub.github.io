@@ -28,10 +28,10 @@
 {% for post in site.posts %}
 {% assign count_posts = count_posts | plus: 1 %}
 {% endfor %}
-{% assign off_a = page.page_number | minus: 1 | times: 20 %}
+{% assign off_a = page.page_number | minus: 1 | times: 12 %}
 
 <div class="posts">
-{% for post in site.posts limit: 20  offset: off_a %}
+{% for post in site.posts limit: 12  offset: off_a %}
 <article class="post">
         <div class="author-line">
             <a href="/{{ post.author }}">
@@ -67,7 +67,7 @@
 </div>
         
         <div class="pages-left">
-{%assign rb = count_posts | divided_by: 20.0 | ceil %}
+{%assign rb = count_posts | divided_by: 12.0 | ceil %}
 {% for i in (1..rb) %}
 {% if i == 1 %}
 <div class="page-number"><a href="/">{{i}}</a></div>
