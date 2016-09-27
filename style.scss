@@ -459,6 +459,10 @@ footer {
   margin-right: 10px;
   text-align: center;
   line-height: 1.1;
+  :hover{
+    background-color: #7cccf5;
+    border-radius: 50%;
+  };
 }
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
