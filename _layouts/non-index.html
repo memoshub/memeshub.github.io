@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>{% if page.title %}{{ page.title }} | {% endif %}{{ site.name }}</title>
+        {% include meta.html %}
+        <!--[if lt IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+        <![endif]-->
+        <link rel="stylesheet" type="text/css" href="{{ site.baseurl }}/style.css" />
+        <link rel="alternate" type="application/rss+xml" title="{{ site.name }} - {{ site.description }}" href="{{ site.baseurl }}/feed.xml" />
+        <link rel="icon" type="image/vnd.microsoft.icon" href="/images/favicon.png" />
+        <link rel="shortcut icon" type="images/x-icon" href="/images/favicon.png" />
+    </head>
+    <body>
+        <div class="wrapper-masthead">
+            <div class="container">
+                <header class="masthead clearfix">
+                    <a href="{{ site.baseurl }}/" class="site-avatar"><img src="{{ site.avatar }}" /></a>
+                    <nav>
+                        <a href="{{ site.baseurl }}/categories">Категории</a>
+                        <a href="{{ site.baseurl }}/authors">Авторы</a>
+                    </nav>
+                </header>
+            </div>
+        </div>
+        
+            {{ content }}
+        
+        <div class="wrapper-footer">
+            <div class="container">
+                <footer class="footer">
+                    {% include svg-icons.html %}
+                    <p style="font-size: 0.8em; margin: 8px;">2016</p>
+                    <!-- Yandex.Metrika counter -->
+<script type="text/javascript">
+    (function (d, w, c) {
+        (w[c] = w[c] || []).push(function() {
+            try {
+                w.yaCounter39831770 = new Ya.Metrika({
+                    id:39831770,
+                    clickmap:true,
+                    trackLinks:true,
+                    accurateTrackBounce:true
+                });
+            } catch(e) { }
+        });
+
+        var n = d.getElementsByTagName("script")[0],
+            s = d.createElement("script"),
+            f = function () { n.parentNode.insertBefore(s, n); };
+        s.type = "text/javascript";
+        s.async = true;
+        s.src = "https://mc.yandex.ru/metrika/watch.js";
+
+        if (w.opera == "[object Opera]") {
+            d.addEventListener("DOMContentLoaded", f, false);
+        } else { f(); }
+    })(document, window, "yandex_metrika_callbacks");
+</script>
+<noscript><div><img src="https://mc.yandex.ru/watch/39831770" style="position:absolute; left:-9999px;" alt="" /></div></noscript>
+<!-- /Yandex.Metrika counter -->
+                </footer>
+            </div>
+        </div>
+        {% include analytics.html %}
+    </body>
+</html>
