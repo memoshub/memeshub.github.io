@@ -14,7 +14,7 @@
             {% assign cp = author_posts %}
             {% endif %}
             {% assign word = "Постов" %}
-            {% if cp == 1 %}
+            {% if cp == 1 and author_posts > 11 or author_posts < 10 and cp == 1 %}
             {% assign word = "Пост" %}
             {% elsif cp < 5 %}
             {% assign word = "Постa" %}
