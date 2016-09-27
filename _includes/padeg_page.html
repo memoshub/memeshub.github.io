@@ -16,6 +16,8 @@
             {% assign word = "Постов" %}
             {% if cp == 1 %}
             {% assign word = "Пост" %}
-            {% elsif cp > 1 and cp < 5 %}
+            {% elsif cp < 5 %}
             {% assign word = "Постa" %}
+            {% else %}
+            {% assign word = "Постов" %}
             {% endif %}
