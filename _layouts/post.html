@@ -6,8 +6,11 @@ layout: default
     <h1>{{ page.title }} by <a href="/{{ page.author }}" style="color: #4183c4;">{{ page.author }}</a></h1>
     <div class="entry">
         <p>{{ page.comment }}</p>
-	  
+{% if page.video %}
+ <iframe width="560" height="315" src="{{page.video}}" frameborder="0" allowfullscreen></iframe>
+{% else %}
 <img src="{{ page.image }}">
+{% endif %}
 <div class="tags-block">
 {% for tag in page.categories %}
 <a href="https://memoshub.ru/{{ tag }}">
