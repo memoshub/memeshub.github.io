@@ -492,7 +492,7 @@ footer {
     display: block;
 }
 .youtube-video{
-  @include media{
+  @include mobile{
     width: 200px;
   }
 }
