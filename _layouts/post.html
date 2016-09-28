@@ -5,7 +5,12 @@ layout: default
 <article class="post">
     <h1>{{ page.title }} by <a href="/{{ page.author }}" style="color: #4183c4;">{{ page.author }}</a></h1>
     <div class="entry">
+{% if page.video %}
         <p>{{ page.comment }}</p>
+{% if page.video %}
+        <a href="{{page.url}}"> {{ page.comment }}</a><br><a href="{{page.video-href}}" target="_blank">{{page.video-href}}</a>
+{%endif%}
+    
 {% if page.video %}
  <iframe width="560" height="315" src="{{page.video}}" frameborder="0" allowfullscreen></iframe>
 {% else %}
