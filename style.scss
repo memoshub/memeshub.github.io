@@ -309,6 +309,11 @@ footer {
 .author-comment {
   font-size: 16px;
   margin-bottom: 8px;
+  p{
+    @include mobile{
+      width: 320px;
+    }
+  }
 }
 .tags {
   margin-top: 15px;
