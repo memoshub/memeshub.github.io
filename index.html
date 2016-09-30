@@ -29,9 +29,6 @@ page_number: 1
         {% if post.comment %}
         <div class="author-comment" style="font-size: 14pt; width: 300px;">
            <a href="{{post.url}}"> {{ post.comment }}</a><br><a href="{{post.video-href}}" target="_blank" style="width: 320px;"><p>{{post.video-href}}</p></a>
-           {% if post.news %}
-            <p class="istochnik">Источник: <a href="{{post.news}}" target="_blank">{{post.news}}</a></p>
-            {% endif %}
         </div>
         {% endif %}
         <div class="mem">
@@ -65,9 +62,6 @@ page_number: 1
         {% if post.comment %}
         <div class="author-comment">
             {{ post.comment }}
-            {% if post.news %}
-            <p class="istochnik">Источник: <a href="{{post.news}}" target="_blank">{{post.news}}</a></p>
-            {% endif %}
         </div>
         {% endif %}
         <div class="mem">
