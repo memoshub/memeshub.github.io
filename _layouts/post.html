@@ -8,7 +8,10 @@ layout: default
         <p>{{ page.comment }}</p>
 {% if page.video %}
        <br><a href="{{page.video-href}}" target="_blank">{{page.video-href}}</a>
-{%endif%}
+{% elsif page.news %}
+    <p>Источник: <a href="{{post.ist}}">{{post.ist}}</a></p>
+{% endif %}
+
     
 {% if page.video %}
  <iframe width="560" height="315" src="{{page.video}}" frameborder="0" allowfullscreen class="youtube-video"></iframe>

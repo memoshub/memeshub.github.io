@@ -2,7 +2,7 @@
 layout: default
 permalink: /memonews/
 ---
-
+<p style="text-align: center; font-size: 2em; margin-bottom: 30px;">Самые горячие МемоНовости</p>
 <div class="posts">
 {% for post in site.posts %}
 {% if post.news %}
@@ -21,7 +21,7 @@ permalink: /memonews/
         {% if post.comment %}
         <div class="author-comment">
             <p>{{ post.comment }}</p>
-            <p>Источник: <a href="{{post.ist}}">{{post.ist}}</a></p>
+            <p>Источник: <a href="{{post.news}}">{{post.news}}</a></p>
         </div>
         {% endif %}
         <div class="mem">
