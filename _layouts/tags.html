@@ -32,6 +32,9 @@
                 {% for tags in post.categories %}
                 {% if tags == page.tag %}
                 <article class="post">
+                {% if post.news %}
+                    <a href="/memonews"><img src="/images/news-label.png" class="news-label"></a>
+                {% endif %}
                     <div class="author-line">
                         <a href="/{{ post.author }}">
                             <img src="/images/author-{{ post.author }}.png" class="author-img"> 

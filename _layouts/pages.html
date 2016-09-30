@@ -34,6 +34,9 @@
 <div class="posts">
 {% for post in site.posts limit: 12  offset: off_a %}
 <article class="post">
+        {% if post.news %}
+    <a href="/memonews"><img src="/images/news-label.png" class="news-label"></a>
+    {% endif %}
         <div class="author-line">
             <a href="/{{ post.author }}">
                 <img src="/images/author-{{ post.author }}.png" class="author-img"> 
