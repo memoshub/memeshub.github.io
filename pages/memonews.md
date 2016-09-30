@@ -9,7 +9,7 @@ permalink: /memonews/
     <article class="post">
         <div class="author-line">
             <a href="/{{ post.author }}">
-                <img src="/images/author-{{ post.author }}.png" class="author-img"> <img src="/images/news-label.png">
+                <img src="/images/author-{{ post.author }}.png" class="author-img"> <img src="/images/news-label.png" class="news-label">
                 <div class="author-name">
                     <h1>{{ post.author }}</h1>
                 </div>

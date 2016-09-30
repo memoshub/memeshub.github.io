@@ -515,6 +515,13 @@ footer {
     font-size: 10pt;
   }
 }
+.news-label{
+  margin-left: 10px;
+  @include mobile{
+    width: 43;
+    height: 15;
+  }
+}
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
 // ... Otherwise it really bloats up the top of the CSS file and makes it difficult to find the start
 @import "highlights";
