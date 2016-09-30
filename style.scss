@@ -518,8 +518,8 @@ footer {
 .news-label{
   margin-left: 10px;
   @include mobile{
-    width: 43;
-    height: 15;
+    width: 43px;
+    height: 15px;
   }
 }
 // Settled on moving the import of syntax highlighting to the bottom of the CSS
