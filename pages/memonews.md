@@ -21,7 +21,7 @@ permalink: /memonews/
         {% if post.comment %}
         <div class="author-comment">
             <p>{{ post.comment }}</p>
-            <p>Источник: <a href="{{post.news}}">{{post.news}}</a></p>
+            <p style="istochnik">Источник: <a href="{{post.news}}">{{post.news}}</a></p>
         </div>
         {% endif %}
         <div class="mem">
