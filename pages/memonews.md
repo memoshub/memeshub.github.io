@@ -7,6 +7,7 @@ permalink: /memonews/
 {% for post in site.posts %}
 {% if post.news %}
     <article class="post">
+    <a href="/memonews"><img src="/images/news-label.png" class="news-label"></a>
         <div class="author-line">
             <a href="/{{ post.author }}">
                 <img src="/images/author-{{ post.author }}.png" class="author-img">
@@ -18,7 +19,6 @@ permalink: /memonews/
                 <p>{% include short_date.html date=post.date %}</p>
             </div>
         </div>
-        <a href="/memonews"><img src="/images/news-label.png" class="news-label"></a>
         {% if post.comment %}
         <div class="author-comment">
             <p>{{ post.comment }}</p>
