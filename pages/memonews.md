@@ -14,11 +14,11 @@ permalink: /memonews/
                     <h1>{{ post.author }}</h1>
                 </div>
             </a>
-            <a href="/memonews"><img src="/images/news-label.png" class="news-label"></a>
             <div class="datetime">
                 <p>{% include short_date.html date=post.date %}</p>
             </div>
         </div>
+        <a href="/memonews"><img src="/images/news-label.png" class="news-label"></a>
         {% if post.comment %}
         <div class="author-comment">
             <p>{{ post.comment }}</p>
