@@ -9,11 +9,12 @@ permalink: /memonews/
     <article class="post">
         <div class="author-line">
             <a href="/{{ post.author }}">
-                <img src="/images/author-{{ post.author }}.png" class="author-img"> <img src="/images/news-label.png" class="news-label">
+                <img src="/images/author-{{ post.author }}.png" class="author-img">
                 <div class="author-name">
                     <h1>{{ post.author }}</h1>
                 </div>
             </a>
+            <a href="/memonews"><img src="/images/news-label.png" class="news-label"></a>
             <div class="datetime">
                 <p>{% include short_date.html date=post.date %}</p>
             </div>
