@@ -12,6 +12,9 @@ page_number: 1
     {% for post in site.posts limit: 12  offset: off_a %}
     {% if post.video %}
     <article class="post">
+    {% if post.news %}
+    <a href="/memonews"><img src="/images/news-label.png" class="news-label"></a>
+    {% endif %}
         <div class="author-line">
             <a href="/{{ post.author }}">
                 <img src="/images/author-{{ post.author }}.png" class="author-img"> 
@@ -42,6 +45,9 @@ page_number: 1
     </article>
     {% else %}
     <article class="post">
+    {% if post.news %}
+    <a href="/memonews"><img src="/images/news-label.png" class="news-label"></a>
+    {% endif %}
         <div class="author-line">
             <a href="/{{ post.author }}">
                 <img src="/images/author-{{ post.author }}.png" class="author-img"> 
@@ -56,6 +62,9 @@ page_number: 1
         {% if post.comment %}
         <div class="author-comment">
             {{ post.comment }}
+            {% if post.news %}
+            <p class="istochnik">Источник: <a href="{{post.news}}" target="_blank">{{post.news}}</a></p>
+            {% endif %}
         </div>
         {% endif %}
         <div class="mem">
