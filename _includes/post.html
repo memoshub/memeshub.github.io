@@ -14,8 +14,8 @@
     </div>
 </div>
 {% if post.comment %}
-<div class="author-comment">{%if post.video%}<br><a href="{{post.video-href}}" target="_blank" style="width: 320px;"><p>{{post.video-href}}</p></a>{%endif%}
-    {{ post.comment }}
+<div class="author-comment">
+    {{ post.comment }}{%if post.video%}<br><a href="{{post.video-href}}" target="_blank" style="width: 320px;"><p>{{post.video-href}}</p></a>{%endif%}{%if post.news%}<br><p class="istochnik">Источник: <a href="{{post.news}}" target="_blank">{{post.news}}</a></p>{%endif%}
 </div>
 {% endif %}
 <div class="mem">
