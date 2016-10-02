@@ -50,12 +50,16 @@
         </div>
         {% if post.comment %}
         <div class="author-comment">
-            {{ post.comment }}
+            {{ post.comment }}{%if post.video%}<br><a href="{{post.video-href}}" target="_blank" style="width: 320px;"><p>{{post.video-href}}</p></a>{%endif%}
         </div>
         {% endif %}
         <div class="mem">
+            {%if post.video%}
+            <iframe width="560" height="315" src="{{post.video}}" frameborder="0" allowfullscreen class="youtube-video"></iframe>
+            {%else%}
             <a rel="simplebox" href="{{ post.url }}">
             <img src="{{ post.image }}"></a>
+            {%endif%}
         </div>
         <div class="tags">
             {% for tag in post.categories %}
