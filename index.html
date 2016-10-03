@@ -2,6 +2,13 @@
 layout: default
 page_number: 1
 ---
+<div class="posts">
+    {%for post in site.posts%}
+    {%if post.video = site.topvideo%}
+    {%include post.html%}
+    {%endif%}
+    {% endfor %}
+</div>
 <p style="text-align: center; font-size: 2em; margin-bottom: 30px;">{{ site.description }}</p>
 <div class="posts">
     {% assign count_posts = 0 %}
