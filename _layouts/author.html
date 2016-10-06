@@ -42,6 +42,7 @@
     {% assign off_a = page.page_number | minus: 1 | times: 12 %}
     {% for post in my_array limit: 12  offset: off_a %}
     {% include post.html %}
+    {{post.image}}
     {% endfor %}
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
         </div>
