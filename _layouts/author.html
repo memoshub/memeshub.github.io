@@ -31,14 +31,13 @@
 {% assign my_array = my_array | append: post.date %}
 {% endif %}
 {% endfor %}
-{{my_array}}
 {% assign my_array = my_array | split: "***" %}
 
 
 
     {% assign off_a = page.page_number | minus: 1 | times: 12 %}
     {% for datep in my_array limit: 12 offset: off_a %}
-    ||{{datep}}||
+    AAA{{datep}}AAA
     {% for post in site.posts %}
     \\{{post.date}}\\
         {%if post.date == datep%}
