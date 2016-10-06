@@ -38,7 +38,7 @@
 
     {% assign off_a = page.page_number | minus: 1 | times: 12 %}
     {% for datep in my_array limit: 12 offset: off_a %}
-    {{datep}}
+    {{datep}}-date-
     {% for post in site.posts %}
         {%if post.date == datep%}
             {% include post.html %}
