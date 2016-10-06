@@ -39,8 +39,9 @@
     {% assign off_a = page.page_number | minus: 1 | times: 12 %}
     {% for datep in my_array %}
     {% for post in site.posts %}
+    <p>AAA{{ datep }}AAABBB{{post.date}}BBB</p>
         {%if post.date == datep%}
-        AAA{{ datep }}AAABBB{{post.date}}BBB
+       
             {% include post.html %}
         {%endif%}
     {% endfor %}
