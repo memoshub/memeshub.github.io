@@ -40,12 +40,10 @@
     {% for datep in my_array %}
     {% for post in site.posts %}
     <p>{{ datep }}|{{post.dateg}}</p>
-        {%if post.dateg == datep%}
-       
+        {% if post.dateg == datep %}
             {% include post.html %}
-        {%endif%}
+        {% endif %}
     {% endfor %}
-
     {% endfor %}
 <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
         </div>
