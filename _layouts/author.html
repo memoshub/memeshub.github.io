@@ -36,7 +36,7 @@
 
 
     {% assign off_a = page.page_number | minus: 1 | times: 12 %}
-    {% for datep in my_array limit: 12 offset: off_a %}
+    {% for datep in my_array %}
     AAA{{datep}}AAA
     {% for post in site.posts %}
     \\{{post.date}}\\
