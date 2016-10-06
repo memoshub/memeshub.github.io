@@ -22,7 +22,8 @@
             <h1>{{ author_posts }} {{ word }} от автора <font color="#4183C4">{{ page.aname }}</font>:</h1>
         </div>
         <div id="main" role="main" class="container">
-            <div class="posts">
+            {{ content }}
+            <div class="posts">  
 {% for post in site.posts %}
 {% if post.author == page.aname %}
 {% include post.html %}
