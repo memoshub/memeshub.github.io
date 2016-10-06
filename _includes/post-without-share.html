@@ -1,0 +1,36 @@
+<article class="post">
+{% if post.news %}
+    <a href="/memonews"><img src="/images/news-label.png" class="news-label"></a>
+    {% endif %}
+<div class="author-line">
+    <a href="/{{ post.author }}">
+        <img src="/images/author-{{ post.author }}.png" class="author-img"> 
+        <div class="author-name">
+            <h1>{{ post.author }}</h1>
+        </div>
+    </a>
+    <div class="datetime">
+        <p>{% include short_date.html date=post.date %}</p>
+    </div>
+</div>
+{% if post.comment %}
+<div class="author-comment">
+    {{ post.comment }}{%if post.video%}<br><a href="{{post.video-href}}" target="_blank" style="width: 320px;"><p>{{post.video-href}}</p></a>{%endif%}{%if post.news%}<br><p class="istochnik">Источник: <a href="{{post.news}}" target="_blank">{{post.news}}</a></p>{%endif%}
+</div>
+{% endif %}
+<div class="mem">
+    {%if post.video%}
+    <iframe width="373" height="210" src="{{post.video}}" frameborder="0" allowfullscreen class="youtube-video"></iframe>
+    {%else%}
+    <a rel="simplebox" href="{{ post.url }}">
+    <img src="{{ post.image }}"></a>
+    {%endif%}
+</div>
+<div class="tags">
+    {% for tag in post.categories %}
+    <a href="/{{ tag }}">#{{ tag }}</a>
+    {% endfor %}
+</div>
+
+
+</article>
