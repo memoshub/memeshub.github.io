@@ -4,15 +4,7 @@
             {% assign author_posts = author_posts | plus: 1 %}
             {% endif %}
             {% endfor %}
-            {% if author_posts >= 1000 %}
-            {% assign cp = author_posts | modulo: 1000 %}
-            {% elsif author_posts >= 100 %}
-            {% assign cp = author_posts | modulo: 100 %}
-            {% elsif author_posts >= 10 %}
-            {% assign cp = author_posts | modulo: 10 %}
-            {% else %}
-            {% assign cp = author_posts %}
-            {% endif %}
+            {% assign cp = author_posts | plus: 10 | modulo: 10 %}
             {% assign word = "Постов" %}
             {% if cp == 1 %}
             {% assign word = "Пост" %}
