@@ -31,8 +31,9 @@
 {% assign my_array = my_array | append: post.date %}
 {% endif %}
 {% endfor %}
-{% assign my_array = my_array | split: "*** " %}
 {{my_array}}
+{% assign my_array = my_array | split: "*** " %}
+
 
 
     {% assign off_a = page.page_number | minus: 1 | times: 12 %}
