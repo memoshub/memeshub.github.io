@@ -40,7 +40,6 @@
     {% for datep in my_array %}
     AAA{{ datep }}AAA
     {% for post in site.posts %}
-    \\{{post.date}}\\
         {%if post.date == datep%}
             {% include post.html %}
         {%endif%}
