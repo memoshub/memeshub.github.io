@@ -24,7 +24,7 @@
         <div id="main" role="main" class="container">
             <div class="posts">  
 
-{% assign my_array = "2016-10-06 18:38:47 +0000" %}
+{% assign my_array = "" %}
 {% for post in site.posts %}
 {% if post.author == page.aname %}
 {% assign my_array = my_array | append: "***" %}
