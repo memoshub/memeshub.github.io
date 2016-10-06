@@ -13,4 +13,3 @@ vk: artyomsvetashov
 {% endif %}
 {% endfor %}
 {% assign my_array = my_array | split: ", " %}
-{{ my_array }}
