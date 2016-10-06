@@ -28,7 +28,7 @@
 {% for post in site.posts %}
 {% if post.author == page.aname %}
 {% assign my_array = my_array | append: "***" %}
-{% assign my_array = my_array | append: post.date %}
+{% assign my_array = my_array | append: post.date | date: %Y%b%d%H%M%S %}
 {% endif %}
 {% endfor %}
 {% assign my_array = my_array | split: "***" %}
